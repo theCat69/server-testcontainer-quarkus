@@ -1,0 +1,30 @@
+---
+openapi: 3.1.0
+paths:
+  /hello:
+    get:
+      responses:
+        "200":
+          description: OK
+          content:
+            text/plain:
+              schema:
+                type: string
+      summary: Hello
+      tags:
+      - Greeting Resource
+info:
+  title: Server compose devservices API
+  version: 1.0.0
+  description: An API for managing items
+  contact:
+    name: API Support
+    email: contact@example.com
+  license:
+    name: Apache 2.0
+    url: https://www.apache.org/licenses/LICENSE-2.0.html
+servers:
+- url: http://localhost:8080
+  description: Auto generated value
+- url: http://0.0.0.0:8080
+  description: Auto generated value
